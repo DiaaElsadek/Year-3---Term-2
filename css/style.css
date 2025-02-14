@@ -1,0 +1,186 @@
+
+/* Start Background Section */
+
+*{
+  transition: all 1s;
+}
+
+.logo-image{
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  top: 0;
+  right: 0;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  background: linear-gradient(-45deg,black , #ff416c, #ff4b2b, #1e90ff, #32cd32, white);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s linear infinite;
+  overflow: auto;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.cursor-effect {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, rgba(255,255,255,0.5), rgba(255,255,255,0));
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(10px);
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease-out, opacity 0.5s ease-out;
+}
+
+.news-hr{
+  height: 2px;
+  background-color: rgba(255, 0, 0, 0.657);
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+/* End Background Section */
+
+/* Start NavBar Section */
+
+.navbar {
+  width: 100%;
+  background: transparent;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.moving-text {
+  color: #fff;
+  display: inline-block;
+  min-width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  animation: marquee 8s linear infinite;
+}
+
+@media (min-width: 768px) {
+  .moving-text {
+    animation-duration: 5s;
+  }
+}
+
+@media (min-width: 1200px) {
+  .moving-text {
+    animation-duration: 20s;
+  }
+  @keyframes marquee {
+    from { transform: translateX(-5%); }
+    to { transform: translateX(5%); }
+  }
+}
+
+@keyframes marquee {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+
+/* End NavBar Section */
+
+/* Start Header Links Section */
+
+.header-links{
+  width: 80%;
+}
+
+.subject-header{
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.link-hti{
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: 20px;
+  margin: 10px 0;
+  text-align: center;
+  width: fit-content, 20%;
+}
+
+.link-hti:hover{
+  color: blue;
+  background-color: white;
+  transition: all 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* End Header Links Section */
+
+/* Start subjects Section */
+
+.subjects-section{
+    height: 80dvh, fit-content;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.subjects{
+  height: 50px, fit-content;
+  width: 80%;
+  background-color: #1e90ff;
+  margin: 6px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 14px;
+  background: linear-gradient(-360deg, #ff416d33, #ff4b2b33, #1e90ff33, #32cd3233);
+  background-size: 400% 400%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.subjects:hover{
+  cursor: pointer;
+  font-size: 1.4rem;
+  background-color: rgba(1, 1, 255, 0.6) ;
+  transition: all 1s;
+}
+
+.subjects a{
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.4rem;
+  width: 100%;
+  height: 100%;
+}
+
+/* End subjects Section */
