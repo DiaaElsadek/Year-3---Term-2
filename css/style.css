@@ -4,7 +4,7 @@
 *{
   transition: all 1s;
   box-sizing: border-box;
-/*   max-width: 100%; */
+  /* max-width: 100%; */
 }
 
 .logo-image{
@@ -91,6 +91,7 @@ body {
 @media (min-width: 1200px) {
   .moving-text {
     animation-duration: 20s;
+    animation: marquee 10s cubic-bezier(0.00001, 0.6, 0.4, 0.4) infinite;
   }
   @keyframes marquee {
     from { transform: translateX(-5%); }
