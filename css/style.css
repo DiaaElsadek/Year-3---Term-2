@@ -4,7 +4,7 @@
 *{
   transition: all 1s;
   box-sizing: border-box;
-  max-width: 100%;
+/*   max-width: 100%; */
 }
 
 .logo-image{
