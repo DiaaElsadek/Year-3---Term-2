@@ -236,3 +236,13 @@ body {
 .parent-slider{
   width: 100%;
 }
+
+/* Start News Section */
+
+.news-section h4{
+  font-weight: 800;
+  font-size: 24px;
+  color: blue;
+}
+
+/* End News Section */
