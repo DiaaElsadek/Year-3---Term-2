@@ -12,19 +12,21 @@
   height: 50px;
   width: 50px;
   top: 0;
-  right: 0;
+  left: 0;
+  z-index: 1px;
 }
 
 html, body{
   max-width: 100%;
   overflow-x: hidden;
+  perspective: 600px;
 }
 
 body {
   margin: 0;
   overflow: hidden;
   height: 100vh;
-  background: linear-gradient(45deg,#6948fd, #332ced, white);
+  background: linear-gradient(to bottom left,#000046, #1CB5E0);
   background-size: 400% 400%;
   /* animation: gradientAnimation 20s linear infinite; */
   overflow: auto;
@@ -58,13 +60,22 @@ body {
 
 .navbar {
   width: 100%;
-  background: transparent;
+  background: linear-gradient(to left, #334dac4a, #081F5C4a);
   padding: 10px 0;
   overflow: hidden;
   white-space: nowrap;
   position: relative;
   display: flex;
   align-items: center;
+}
+
+.navbar:hover{
+  transform: scale(1.2);
+}
+
+.navbar:hover h4{
+  font-size: 22px;
+  font-weight: 800;
 }
 
 .moving-text {
@@ -102,8 +113,34 @@ body {
 
 /* Start Header Links Section */
 
+/* Week title */
+.week-title{
+  text-align: center;
+  font-weight: 800;
+  font-size: 220%;
+  color: #E7F1FF;
+}
+
 .header-links{
   width: 80%;
+}
+
+.header-links .row a, .gpa-section .first-link a{
+  background-color: #7096D1;
+  color: #E7F1FF;
+  font-weight: 800;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-size: 120%;
+  box-shadow: 1px 1px 10px 1px #334eac;
+}
+
+.header-links .row a:hover, .gpa-section .first-link a:hover{
+  box-shadow: 10px 10px 10px 1px #334eac;
+  background-color: #E7F1FF;
+  color: #7096D1;
+  transform: scale(1.2);
+  transition: all 0.8s;
 }
 
 .subject-header{
@@ -131,6 +168,10 @@ body {
 
 /* Start subjects Section */
 
+.subjects-section-parent{
+  height: fit-content;
+}
+
 .subjects-section{
     height: 80dvh, fit-content;
     background: rgba(255, 255, 255, 0.2);
@@ -151,7 +192,6 @@ body {
 .subjects{
   height: 50px, fit-content;
   width: 80%;
-  background-color: #1e90ff;
   margin: 6px auto;
   display: flex;
   flex-direction: column;
@@ -159,22 +199,16 @@ body {
   text-align: center;
   padding: 20px;
   border-radius: 14px;
-  background: linear-gradient(-360deg, #ff416d33, #ff4b2b33, #1e90ff33, #32cd3233);
+  background: linear-gradient(to bottom right, #6cb1da, #c8eaec);
   background-size: 400% 400%;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
 .subjects:hover{
   cursor: pointer;
   font-size: 1.4rem;
-  background-color: rgba(1, 1, 255, 0.6) ;
+  background: linear-gradient(to top left, #6cb1da, #c8eaec);
   transition: all 1s;
 }
 
@@ -186,4 +220,19 @@ body {
   height: 100%;
 }
 
+.subjects:hover{
+  width: 85%;
+  transform: scale(1.2);
+}
+
+.subjects:hover a{
+  color: #063250;
+  font-weight: 800;
+  font-size: 110%;
+}
+
 /* End subjects Section */
+
+.parent-slider{
+  width: 100%;
+}
