@@ -1,195 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year 3-Term 2</title>
+    <!-- Icon -->
+    <link rel="icon" type="image/main-icon" href="img/HTI Logo.png">
+    <!-- wow css  -->
+    <link rel="stylesheet" href="css/wow.min.css">
+    <!-- animate css  -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- fontawsome css  -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- mdbootstrap css  -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- style css  -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
 
-/* Start Background Section */
+    <!-- Start NAVbar Section -->
 
-*{
-  transition: all 1s;
-  box-sizing: border-box;
-  /* max-width: 100%; */
-}
+    <a href="news.html" target="_self">
+        <nav class="navbar d-flex flex-column justify-content-center">
+            <img src="img/HTI Logo.png" alt="HTI logo" class="logo-image">
+            <div class="moving-text d-flex">
+                <h4>دفعة 22 علوم الحاسب CS | جميع الاخبار المهمة للدفعة</h4>
+            </div>
+        </nav>
+    </a>
 
-.logo-image{
-  position: fixed;
-  height: 50px;
-  width: 50px;
-  top: 0;
-  right: 0;
-}
+    <!-- End NAVbar Section -->
 
-html, body{
-  max-width: 100%;
-  overflow-x: hidden;
-}
+    <!-- Start Header Links -->
 
-body {
-  margin: 0;
-  overflow: hidden;
-  height: 100vh;
-  background: linear-gradient(-45deg,black , #ff416c, #ff4b2b, #1e90ff, #32cd32, white);
-  background-size: 400% 400%;
-  animation: gradientAnimation 20s linear infinite;
-  overflow: auto;
-  background-repeat: no-repeat;
-}
+    <div class="header-links mx-auto container my-4 text-center">
+        <div class="row">
+            <div class="first-link text-center col-md-4 animate__animated animate__bounceInRight">
+                <a href="https://www.hti.edu.eg/?page_id=3897" class="btn btn-primary link-hti" target="_blank">صفحة المعهد الرئيسية</a>
+            </div>
+            <div class="second-link text-center col-md-4 animate__animated animate__bounceInLeft">
+                <a href="https://docs.google.com/spreadsheets/d/1OZp8kCDvZ2SK4OaEFW-H9ZOsK1eXZfnq/edit?usp=drive_link&ouid=114220463521352058671&rtpof=true&sd=true" class="btn btn-primary link-hti" target="_blank">جدول الترم</a>
+            </div>
+            <div class="third-link text-center col-md-4 animate__animated animate__bounceInDown">
+                <a href="http://mis.hti.edu.eg/hti/login.jsp" class="btn btn-danger link-hti" target="_blank">موقع التسجيل</a>
+            </div>
+        </div>
+    </div>
 
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+    <!-- End Header Links -->
 
-.cursor-effect {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background: radial-gradient(circle, rgba(255,255,255,0.5), rgba(255,255,255,0));
-  border-radius: 50%;
-  pointer-events: none;
-  filter: blur(10px);
-  opacity: 1;
-  transform: translate(-50%, -50%);
-  transition: transform 0.3s ease-out, opacity 0.5s ease-out;
-}
+    <!-- Start subjects Section -->
 
-.news-hr{
-  height: 2px;
-  background-color: rgba(255, 0, 0, 0.657);
-  display: block;
-  width: 100%;
-  border: none;
-}
+    <div class="subjects-section-parent container p-3">
+        <div class="row">
+            <div class="subjects-section p-3">
+                <div class="ai-subject subjects animate__animated animate__bounceInLeft">
+                    <a href="ai_subject.html" target="_blank">
+                        الذكاء الاصطناعي AI
+                    </a>
+                </div>
+                <div class="web-dev-subject subjects animate__animated animate__bounceInRight">
+                    <a href="web_subject.html" target="_blank">برمجة الويب</a>
+                </div>
+                <div class="draw-comp-subject subjects animate__animated animate__bounceInLeft">
+                    <a href="comp_draw.html" target="_blank">رسم بالحاسب</a>
+                </div>
+                <div class="dps-subject subjects animate__animated animate__bounceInRight">
+                    <a href="dps.html" target="_blank">معالجة الاشارات الرقمية</a>
+                </div>
+                <div class="mawdoat-subject subjects animate__animated animate__bounceInLeft">
+                    <a href="mawwdoat_subject.html" target="_blank">موضوعات مختارة في علوم الحاسب</a>
+                </div>
+                <div class="os-subject subjects animate__animated animate__bounceInRight">
+                    <a href="os_subject.html" target="_blank">نظريات نظم التشغيل OS</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-/* End Background Section */
+    <!-- End Parent Section -->
 
-/* Start NavBar Section */
+    <!-- Start GPA Section -->
 
-.navbar {
-  width: 100%;
-  background: transparent;
-  padding: 10px 0;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
+    <div class="container">
+        <div class="row">
+            <div class="first-link text-center col12 animate__animated animate__bounceInRight mb-4">
+                <a href="#" class="btn btn-primary link-hti" target="_blank" onclick="return false;">GPA Calculator</a>
+            </div>
+        </div>
+    </div>
 
-.moving-text {
-  color: #fff;
-  display: inline-block;
-  min-width: 100%;
-  font-size: 20px;
-  font-weight: bold;
-  animation: marquee 8s linear infinite;
-}
+    <!-- <br> -->
 
-@media (min-width: 768px) {
-  .moving-text {
-    animation-duration: 5s;
-  }
-}
+    <!-- End GPA Section -->
 
-@media (min-width: 1200px) {
-  .moving-text {
-    animation-duration: 20s;
-    animation: marquee 10s cubic-bezier(0.00001, 0.6, 0.4, 0.4) infinite;
-  }
-  @keyframes marquee {
-    from { transform: translateX(-5%); }
-    to { transform: translateX(5%); }
-  }
-}
-
-@keyframes marquee {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(100%); }
-}
-
-/* End NavBar Section */
-
-/* Start Header Links Section */
-
-.header-links{
-  width: 80%;
-}
-
-.subject-header{
-  font-size: 2rem;
-  font-weight: 800;
-}
-
-.link-hti{
-  font-size: 1rem;
-  font-weight: 800;
-  border-radius: 20px;
-  margin: 10px 0;
-  text-align: center;
-  width: fit-content, 20%;
-}
-
-.link-hti:hover{
-  color: blue;
-  background-color: white;
-  transition: all 1s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* End Header Links Section */
-
-/* Start subjects Section */
-
-.subjects-section{
-    height: 80dvh, fit-content;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-}
-
-.subjects{
-  height: 50px, fit-content;
-  width: 80%;
-  background-color: #1e90ff;
-  margin: 6px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  border-radius: 14px;
-  background: linear-gradient(-360deg, #ff416d33, #ff4b2b33, #1e90ff33, #32cd3233);
-  background-size: 400% 400%;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.subjects:hover{
-  cursor: pointer;
-  font-size: 1.4rem;
-  background-color: rgba(1, 1, 255, 0.6) ;
-  transition: all 1s;
-}
-
-.subjects a{
-  color: #fff;
-  font-weight: 800;
-  font-size: 1.4rem;
-  width: 100%;
-  height: 100%;
-}
-
-/* End subjects Section */
+    <!-- JAVASCRIPT Files -->
+    <!-- fontawsome js -->
+    <script src="js/all.min.js"></script>
+    <!-- wow js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- wow js -->
+    <!-- jquery js -->
+    <script src="js/jquery.slim.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- mdbootstrap js -->
+    <script src="js/mdb.min.js"></script>
+    <!-- mdbootstrap js -->
+    <!-- Main File JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
