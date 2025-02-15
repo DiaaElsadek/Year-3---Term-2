@@ -19,8 +19,9 @@ body {
   height: 100vh;
   background: linear-gradient(-45deg,black , #ff416c, #ff4b2b, #1e90ff, #32cd32, white);
   background-size: 400% 400%;
-  animation: gradientAnimation 8s linear infinite;
+  animation: gradientAnimation 20s linear infinite;
   overflow: auto;
+  background-repeat: no-repeat;
 }
 
 @keyframes gradientAnimation {
