@@ -27,14 +27,8 @@ body {
   background: linear-gradient(45deg,#6948fd, #332ced, white);
   background-size: 400% 400%;
   /* animation: gradientAnimation 20s linear infinite; */
-  overflow: auto;
+  /* overflow: auto; */
   background-repeat: no-repeat;
-}
-
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 }
 
 .cursor-effect {
@@ -151,7 +145,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden !important;
 }
 
 .subjects{
