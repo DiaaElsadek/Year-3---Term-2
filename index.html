@@ -44,7 +44,7 @@
                     المعهد الرئيسية</a>
             </div>
             <div class="second-link text-center col-md-4 animate__animated animate__bounceInLeft">
-                <a class="btn btn-primary link-hti" target="_blank" onclick="downloadFile()">جدول التيرم الثاني</a>
+                <a class="btn btn-primary link-hti" onclick="showPopup(event)">جدول التيرم الثاني</a>
             </div>
             <div class="third-link text-center col-md-4 animate__animated animate__bounceInDown">
                 <a href="http://mis.hti.edu.eg/hti/login.jsp" class="btn btn-danger link-hti" target="_blank">موقع
@@ -52,6 +52,19 @@
             </div>
         </div>
     </div>
+
+    <!-- Start Showen Div -->
+
+    <div id="popup">
+        <div>
+            <button onclick="return downloadFile();">Download</button>
+        </div>
+        <div>
+            <button onclick="goToPage('img/Groups year 3.pdf');">View</button>
+        </div>
+    </div>
+
+    <!-- End Showen Div -->
 
     <!-- End Header Links -->
 
