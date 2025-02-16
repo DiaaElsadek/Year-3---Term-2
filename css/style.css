@@ -28,9 +28,15 @@ body {
   height: 100vh;
   background: linear-gradient(to bottom left,#000046, #1CB5E0);
   background-size: 400% 400%;
-  /* animation: gradientAnimation 20s linear infinite; */
+  animation: glowingBackground 5s linear infinite;
   overflow: auto;
   background-repeat: no-repeat;
+}
+
+@keyframes glowingBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .cursor-effect {
