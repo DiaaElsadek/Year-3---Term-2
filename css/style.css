@@ -164,7 +164,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #fff, #ffd700, #fff, #000, #fff);
+  background: linear-gradient(270deg, #fff, #ffd700, #fff, #000, #fff);
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
