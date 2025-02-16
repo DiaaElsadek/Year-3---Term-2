@@ -1,4 +1,3 @@
-// Function to Download the groups file
 function downloadFile() {
     let fileURL = "../img/Groups year 3.pdf";
     let a = document.createElement("a");
@@ -11,4 +10,14 @@ function downloadFile() {
     setTimeout(() => {
         window.open(fileURL, "_blank");
     }, 1000);
+}
+
+function showPopup(event) {
+    event.preventDefault();
+    document.getElementById("popup").style.display = "block";
+}
+
+function goToPage(url) {
+    window.open(url, '_blank');
+    document.getElementById("popup").style.display = "none";
 }
