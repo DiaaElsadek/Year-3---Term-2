@@ -125,6 +125,8 @@ body {
   width: 80%;
 }
 
+/* Start Gpa Section */
+
 .header-links .row a, .gpa-section .first-link a{
   background-color: #7096D1;
   color: #E7F1FF;
@@ -142,6 +144,25 @@ body {
   transform: scale(1.2);
   transition: all 0.8s;
 }
+
+@keyframes shine {
+  0% { background-position: -200%; }
+  100% { background-position: 200%; }
+}
+
+.gpa-text {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #fff, #ffd700, #fff, #000);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+
+
+/* End Gpa Section */
 
 .subject-header{
   font-size: 2rem;
