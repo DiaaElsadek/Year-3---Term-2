@@ -79,6 +79,10 @@ body {
   transform: scale(1.2);
 }
 
+.navbar h4{
+  margin-bottom: 0;
+}
+
 .navbar:hover h4{
   font-size: 22px;
   font-weight: 800;
