@@ -1,13 +1,12 @@
-
 /* Start Background Section */
 
-*{
+* {
   transition: all 1s;
   box-sizing: border-box;
   /* max-width: 100%; */
 }
 
-.logo-image{
+.logo-image {
   position: fixed;
   height: 50px;
   width: 50px;
@@ -16,7 +15,8 @@
   z-index: 1px;
 }
 
-html, body{
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
   perspective: 600px;
@@ -26,7 +26,7 @@ body {
   margin: 0;
   overflow: hidden;
   height: 100vh;
-  background: linear-gradient(to bottom left,#000046, #1CB5E0);
+  background: linear-gradient(to bottom left, #000046, #1CB5E0);
   background-size: 400% 400%;
   animation: glowingBackground 5s linear infinite;
   overflow: auto;
@@ -34,16 +34,24 @@ body {
 }
 
 @keyframes glowingBackground {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .cursor-effect {
   position: absolute;
   width: 60px;
   height: 60px;
-  background: radial-gradient(circle, rgba(255,255,255,0.5), rgba(255,255,255,0));
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
   border-radius: 50%;
   pointer-events: none;
   filter: blur(10px);
@@ -52,7 +60,7 @@ body {
   transition: transform 0.3s ease-out, opacity 0.5s ease-out;
 }
 
-.news-hr{
+.news-hr {
   height: 2px;
   background-color: rgba(255, 0, 0, 0.657);
   display: block;
@@ -75,15 +83,15 @@ body {
   align-items: center;
 }
 
-.navbar:hover{
+.navbar:hover {
   transform: scale(1.2);
 }
 
-.navbar h4{
+.navbar h4 {
   margin-bottom: 0;
 }
 
-.navbar:hover h4{
+.navbar:hover h4 {
   font-size: 22px;
   font-weight: 800;
 }
@@ -108,15 +116,26 @@ body {
     animation-duration: 20s;
     animation: marquee 10s cubic-bezier(0.00001, 0.6, 0.4, 0.4) infinite;
   }
+
   @keyframes marquee {
-    from { transform: translateX(-5%); }
-    to { transform: translateX(5%); }
+    from {
+      transform: translateX(-5%);
+    }
+
+    to {
+      transform: translateX(5%);
+    }
   }
 }
 
 @keyframes marquee {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(100%); }
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
 }
 
 /* End NavBar Section */
@@ -124,20 +143,21 @@ body {
 /* Start Header Links Section */
 
 /* Week title */
-.week-title{
+.week-title {
   text-align: center;
   font-weight: 800;
   font-size: 220%;
   color: #E7F1FF;
 }
 
-.header-links{
+.header-links {
   width: 80%;
 }
 
 /* Start Gpa Section */
 
-.header-links .row a, .gpa-section .first-link a{
+.header-links .row a,
+.gpa-section .first-link a {
   background-color: #7096D1;
   color: #E7F1FF;
   font-weight: 800;
@@ -147,7 +167,8 @@ body {
   box-shadow: 1px 1px 10px 1px #334eac;
 }
 
-.header-links .row a:hover, .gpa-section .first-link a:hover{
+.header-links .row a:hover,
+.gpa-section .first-link a:hover {
   box-shadow: 10px 10px 10px 1px #334eac;
   background-color: #E7F1FF;
   color: #7096D1;
@@ -156,14 +177,20 @@ body {
 }
 
 @keyframes shine {
-  0% { background-position: -200%; }
-  100% { background-position: 200%; }
+  0% {
+    background-position: -200%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
 }
 
 .gpa-text {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  background: linear-gradient(270deg, #fff, #ffd700, #fff, #000, #fff);
   background: linear-gradient(225deg, #fff, #ffd700, #fff, #000, #fff);
   background-size: 200%;
   -webkit-background-clip: text;
@@ -171,50 +198,15 @@ body {
   animation: shine 4s linear infinite;
 }
 
-/* Start Showen Div */
-
-#popup{
-  transition: all 0.5s;
-  z-index: 500;
-  position: fixed;
-  width: 25%; 
-  height: 20%;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(75, 137, 218, 0.667); 
-  padding: 20px; 
-  border: 1px solid #ccc; 
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
-  text-align: center;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#popup div{
-  width: 80%;
-}
-
-#popup button{
-  border: none;
-  font-weight: 500;
-  width: 80%;
-  border-radius: 20px;
-  background-color: #063250;
-  color: #fff;
-}
-
-/* End Showen Div */
 
 /* End Gpa Section */
 
-.subject-header{
+.subject-header {
   font-size: 2rem;
   font-weight: 800;
 }
 
-.link-hti{
+.link-hti {
   font-size: 1rem;
   font-weight: 800;
   border-radius: 20px;
@@ -223,7 +215,7 @@ body {
   width: fit-content, 20%;
 }
 
-.link-hti:hover{
+.link-hti:hover {
   color: blue;
   background-color: white;
   transition: all 1s;
@@ -234,28 +226,28 @@ body {
 
 /* Start subjects Section */
 
-.subjects-section-parent{
+.subjects-section-parent {
   height: fit-content;
 }
 
-.subjects-section{
-    height: 80dvh, fit-content;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+.subjects-section {
+  height: 80dvh, fit-content;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.subjects{
+.subjects {
   height: 50px, fit-content;
   width: 80%;
   margin: 6px auto;
@@ -271,7 +263,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.subjects:hover{
+.subjects:hover {
   cursor: pointer;
   font-size: 1.4rem;
   background: linear-gradient(45deg, #ffd700, #ffb700, #ffcc00, #fff3b0, #ffcc00, #ffb700, #ffd700);
@@ -281,17 +273,30 @@ body {
 }
 
 @keyframes goldShine {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes shineEffect {
-  0% { left: -100%; }
-  100% { left: 100%; }
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
 }
 
-.subjects a{
+.subjects a {
   color: #fff;
   font-weight: 800;
   font-size: 1.4rem;
@@ -299,12 +304,12 @@ body {
   height: 100%;
 }
 
-.subjects:hover{
+.subjects:hover {
   width: 85%;
   transform: scale(1.01);
 }
 
-.subjects:hover a{
+.subjects:hover a {
   color: #063250;
   font-weight: 800;
   font-size: 110%;
@@ -312,13 +317,13 @@ body {
 
 /* End subjects Section */
 
-.parent-slider{
+.parent-slider {
   width: 100%;
 }
 
 /* Start News Section */
 
-.news-section h4{
+.news-section h4 {
   font-weight: 800;
   font-size: 24px;
   color: blue;
