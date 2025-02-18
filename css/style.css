@@ -139,6 +139,7 @@ body {
   font-weight: 800;
   font-size: 220%;
   color: #E7F1FF;
+  animation-delay: 1s;
 }
 
 .header-links {
