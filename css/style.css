@@ -255,13 +255,34 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.subjects:nth-of-type(2){
+  animation-delay: 0.2s;
+}
+
+.subjects:nth-of-type(3){
+  animation-delay: 0.4s;
+}
+
+.subjects:nth-of-type(4){
+  animation-delay: 0.6s;
+}
+
+.subjects:nth-of-type(5){
+  animation-delay: 0.8s;
+}
+
+.subjects:nth-of-type(6){
+  animation-delay: 1s;
+}
+
+
 .subjects:hover {
   cursor: pointer;
   /* font-size: 1.4rem; */
   background: linear-gradient(45deg, #ffd700, #ffb700, #ffcc00, #fff3b0, #ffcc00, #ffb700, #ffd700);
   background-size: 300% 300%;
-  animation: goldShine 8s infinite linear;
-  transition: all 1s;
+  animation: goldShine 8s infinite forwards;
+  /* transition: all 1s; */
 }
 
 @keyframes goldShine {
