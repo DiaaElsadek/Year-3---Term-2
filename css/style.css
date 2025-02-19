@@ -74,13 +74,16 @@ body {
 
 .navbar {
   width: 100%;
-  background: linear-gradient(to left, #334dac4a, #081F5C4a);
+  background: linear-gradient(to left, #334dac, #081e5cb8);
   padding: 10px 0;
   overflow: hidden;
   white-space: nowrap;
   position: relative;
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 400;
 }
 
 .navbar h4 {
