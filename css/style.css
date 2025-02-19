@@ -29,7 +29,7 @@ body {
   background: linear-gradient(to bottom left, #000046, #1CB5E0);
   background-size: 400% 400%;
   animation: glowingBackground 5s linear infinite;
-  overflow: auto;
+  overflow-x: hidden;
   background-repeat: no-repeat;
 }
 
