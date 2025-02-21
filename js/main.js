@@ -1,14 +1,11 @@
 function downloadFile() {
-    let fileURL = "../img/Groups year 3.pdf";
+    let fileURL = "../img/GPA - Calculator.xlsx";
     let a = document.createElement("a");
     a.href = fileURL;
-    a.download = "Groups Year 3 - Term 2.pdf";
+    a.download = "GPA Calc.xlsx";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
-    setTimeout(() => {
-        window.open(fileURL, "_blank");
-    }, 1000);
 }
 
 function showPopup(event) {
@@ -31,5 +28,5 @@ setTimeout(function () {
     document.querySelectorAll(".subjects").forEach(subject => {
         subject.style.animation = "none";
     });
-}, 2000); // 3000 ميلي ثانية = 3 ثواني
+}, 2000);
 
