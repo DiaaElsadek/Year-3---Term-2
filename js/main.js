@@ -30,3 +30,7 @@ setTimeout(function () {
     });
 }, 2000);
 
+
+function goTo(url){
+    window.open(url, "_blank");
+}
