@@ -145,6 +145,11 @@ body {
   animation-delay: 1s;
 }
 
+.week-title2 {
+  text-align: center;
+  animation-delay: 1s;
+}
+
 .header-links {
   width: 80%;
 }
