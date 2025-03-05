@@ -1,5 +1,5 @@
 function downloadFile() {
-    let fileURL = "../img/GPA - Calculator.xlsx";
+    let fileURL = "https://docs.google.com/spreadsheets/d/1IBLjQBBN13BIVaGJYDnnSi7dkt2zx3Q8/edit?usp=drive_link&ouid=106283500794737025863&rtpof=true&sd=true";
     let a = document.createElement("a");
     a.href = fileURL;
     a.download = "GPA Calc.xlsx";
