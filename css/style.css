@@ -393,7 +393,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #334eac;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb:hover {
