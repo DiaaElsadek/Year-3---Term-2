@@ -1,3 +1,4 @@
+
 /* Start Background Section */
 
 * {
@@ -378,3 +379,26 @@ body {
 }
 
 /* End News Section */
+
+/* Start Scollorel Section */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6cb1da;
+  border-radius: 10px;
+  transition: all 1s;
+}
+
+::-webkit-scrollbar-track {
+  background: #334eac;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f;
+  transition: all 1s;
+}
+
+/* End Scollorel Section */
