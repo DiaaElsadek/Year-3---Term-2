@@ -402,3 +402,28 @@ body {
 }
 
 /* End Scollorel Section */
+
+/* Start Thanks for Section */
+
+.powerd-by{
+  text-align: center;
+  color: #fff;
+}
+
+.powerd-by h3{
+  font-size: 1rem;
+  font-family: serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.eng-card{
+  color: #fff;
+}
+
+.eng-card h6{
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* End Thanks for Section */
